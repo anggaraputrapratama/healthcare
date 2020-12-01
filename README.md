@@ -1,6 +1,8 @@
 # Healthcare
 
-Tubes Project Mobile App 
+Tubes project mata kuliah Mobile App 
+
+Aplikasi bernama Health Tracker
 
 ## Getting Started
 
