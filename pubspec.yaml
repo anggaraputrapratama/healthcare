@@ -22,7 +22,6 @@ environment:
 
 dependencies:
   hexcolor: ^1.0.6
-  flutter_svg: ^0.17.4
   flutter:
     sdk: flutter
 
