@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:healthcare/Screens/Signup/signup_screen.dart';
 import 'package:healthcare/components/rounded_button.dart';
-import 'package:hexcolor/hexcolor.dart';
+import 'package:healthcare/components/rounded_input_field.dart';
+import 'package:healthcare/components/rounded_password_field.dart';
+import 'package:healthcare/constant.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
 
 class Body extends StatelessWidget {
   final Widget child;
@@ -28,7 +31,7 @@ class Body extends StatelessWidget {
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 50,
-                    color: HexColor("#646AFA")),
+                    color: kPrimaryColor),
               ),
               Text(
                 " Please login or signup to continue using our app.",
@@ -36,8 +39,15 @@ class Body extends StatelessWidget {
               ),
               SizedBox(height: size.height * 0.05),
               SvgPicture.asset(
-                "assets/images/Logo.svg",
+                "assets/images/Logo Health Tracker.svg",
                 height: size.height * 0.45,
+              ),
+              RoundedInputField(
+                hintText: "Your Email",
+                onChanged: (value) {},
+              ),
+              RoundedPasswordField(
+                onChanged: (value) {},
               ),
               RoundedButton(
                 text: "Sign Up",
