@@ -35,10 +35,6 @@ class BodyLogin extends StatelessWidget {
                         fontSize: 50,
                         color: kPrimaryColor),
                   ),
-                  SvgPicture.asset(
-                    "assets/images/Logo Health Tracker.svg",
-                    height: size.height * 0.05,
-                  ),
                 ],
               ),
               SizedBox(height: size.height * 0.01),
@@ -52,7 +48,12 @@ class BodyLogin extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: size.height * 0.3),
+              SizedBox(height: size.height * 0.05),
+              SvgPicture.asset(
+                "assets/images/Logo Health Tracker.svg",
+                height: size.height * 0.25,
+              ),
+              SizedBox(height: size.height * 0.04),
               RoundedInputField(
                 hintText: "Your Email",
                 onChanged: (value) {},
