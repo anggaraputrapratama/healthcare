@@ -11,7 +11,7 @@ Anggota :<br>
 3. Amalia Nur Rahwati     (1101174065)<br>
 4. Rindiani Zainet        (1101174210)<br><br>
 
-![WelcomeScreen](welcome_screen.png)<br>
+![WelcomeScreen](welcome_screen.png)  ![LoginScreen](login_screen.png)
 
 
 ## Getting Started
