@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:healthcare/Screens/Home/home_screen.dart';
 import 'package:healthcare/Screens/Login/login_screen.dart';
-import 'package:healthcare/Screens/Signup/signup_screen.dart';
 import 'package:healthcare/components/already_have_an_account_acheck.dart';
 import 'package:healthcare/components/or_divider.dart';
 import 'package:healthcare/components/rounded_button.dart';
@@ -67,7 +67,7 @@ class Body extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) {
-                        return SignUpScreen();
+                        return HomeScreen();
                       },
                     ),
                   );
