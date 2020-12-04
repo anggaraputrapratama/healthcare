@@ -1,8 +1,18 @@
 # Healthcare
 
-Tubes project mata kuliah Mobile App 
+Tubes project mata kuliah Mobile App - Telkom University
 
 Aplikasi bernama Health Tracker
+
+Kelompok 2C<br>
+Anggota :<br>
+1. Anggara Putra Pratama  (1101174240)<br>
+2. Deny Kurniawan         (1101174126)<br>
+3. Amalia Nur Rahwati     (1101174065)<br>
+4. Rindiani Zainet        (1101174210)<br><br>
+
+![WelcomeScreen](welcome_screen.png)<br>
+
 
 ## Getting Started
 
