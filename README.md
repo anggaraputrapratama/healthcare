@@ -12,6 +12,7 @@ Anggota :<br>
 4. Rindiani Zainet        (1101174210)<br><br>
 
 ![WelcomeScreen](welcome_screen.png)<br>
+![LoginScreen](login_screen.png)<br>
 
 
 ## Getting Started
