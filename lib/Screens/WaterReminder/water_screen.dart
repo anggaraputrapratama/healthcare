@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Heartbeat extends StatelessWidget {
+class WaterReminder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }

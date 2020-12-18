@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Weight extends StatelessWidget {
+class Heartbeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold();

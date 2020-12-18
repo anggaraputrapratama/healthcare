@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:healthcare/Screens/Home/Heartbeat/heartbeat_screen.dart';
+import 'package:healthcare/Screens/Heartbeat/heartbeat_screen.dart';
 import 'package:healthcare/Screens/Home/components/background.dart';
+import 'package:healthcare/Screens/WaterReminder/water_screen.dart';
 import 'package:healthcare/Screens/Weight/weight_screen.dart';
 import 'package:healthcare/components/button_fitur.dart';
-import 'package:healthcare/components/rounded_button.dart';
+
 import 'package:healthcare/constant.dart';
 
 class BodyHome extends StatelessWidget {
@@ -26,7 +27,7 @@ class BodyHome extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Good Morning,",
+                    "Hai,",
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
@@ -69,6 +70,19 @@ class BodyHome extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) {
                         return Weight();
+                      },
+                    ),
+                  );
+                },
+              ),
+              ButtonFitur(
+                text: "Water Reminder",
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return WaterReminder();
                       },
                     ),
                   );

@@ -18,10 +18,10 @@ class ButtonFitur extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10),
-      width: size.width * 0.8,
+      width: size.width * 0.4,
       child: ClipRRect(
         child: FlatButton(
-          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
           color: color,
           onPressed: press,
           child: Text(
