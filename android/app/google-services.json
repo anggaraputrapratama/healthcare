@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:575728768630:android:2a55be79d3210339e1f157",
+        "mobilesdk_app_id": "1:575728768630:android:2593567d2f6ae183e1f157",
         "android_client_info": {
-          "package_name": "com.anggaraputrapratama.healthtracker"
+          "package_name": "com.anggaraputrapratama.healthcare"
         }
       },
       "oauth_client": [
@@ -202,6 +202,50 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO8fE-JpRXoP4eGRg7_PBY0QTYzm40CJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575728768630-32jlk5u2noemvhofmsvatasl8man0dff.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anggaraputrapratama.HealthTracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575728768630:android:54cd42ff7496904be1f157",
+        "android_client_info": {
+          "package_name": "okelah.bos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575728768630-rih121v71bd3e7v5qt58otmq0lfsedqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "okelah.bos",
+            "certificate_hash": "b41fefb511b636bdda1c5a0d044105d8b5e14f2d"
+          }
+        },
         {
           "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
           "client_type": 3
