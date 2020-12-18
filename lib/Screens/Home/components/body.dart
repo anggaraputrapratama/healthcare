@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:healthcare/Screens/Home/Heartbeat/heartbeat_screen.dart';
 import 'package:healthcare/Screens/Home/components/background.dart';
+import 'package:healthcare/Screens/Weight/weight_screen.dart';
+import 'package:healthcare/components/button_fitur.dart';
+import 'package:healthcare/components/rounded_button.dart';
 import 'package:healthcare/constant.dart';
 
 class BodyHome extends StatelessWidget {
@@ -17,6 +21,7 @@ class BodyHome extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SizedBox(height: size.height * 0.1),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -41,6 +46,33 @@ class BodyHome extends StatelessWidget {
                         color: kPrimaryLightColor),
                   ),
                 ],
+              ),
+              SizedBox(height: size.height * 0.1),
+              ButtonFitur(
+                text: "Heartbeat",
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return Heartbeat();
+                      },
+                    ),
+                  );
+                },
+              ),
+              ButtonFitur(
+                text: "Weight",
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return Weight();
+                      },
+                    ),
+                  );
+                },
               )
             ],
           ),
