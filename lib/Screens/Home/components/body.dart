@@ -3,12 +3,8 @@ import 'package:healthcare/Screens/Heartbeat/heartbeat_screen.dart';
 import 'package:healthcare/Screens/Home/components/background.dart';
 import 'package:healthcare/Screens/WaterReminder/water_screen.dart';
 import 'package:healthcare/Screens/Weight/weight_screen.dart';
+import 'package:healthcare/Screens/Maps/Tracking.dart';
 import 'package:healthcare/components/button_fitur.dart';
-<<<<<<< HEAD
-import 'package:healthcare/Screens/tracking/Tracking.dart';
-=======
-import 'package:healthcare/Screens/UserProfile/user_profile.dart';
->>>>>>> bb58aa31a8f9cdb05886c54beecf765462516116
 
 import 'package:healthcare/constant.dart';
 
@@ -94,21 +90,13 @@ class BodyHome extends StatelessWidget {
                 },
               ),
               ButtonFitur(
-<<<<<<< HEAD
-                text: "Tracking",
-=======
-                text: "User Profile",
->>>>>>> bb58aa31a8f9cdb05886c54beecf765462516116
+                text: "Langkah Kaki",
                 press: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) {
-<<<<<<< HEAD
-                        return Tracking();
-=======
-                        return UserProfile();
->>>>>>> bb58aa31a8f9cdb05886c54beecf765462516116
+                        return MyApp();
                       },
                     ),
                   );
