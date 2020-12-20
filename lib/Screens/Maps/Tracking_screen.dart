@@ -93,7 +93,7 @@ class _ScreenPageState extends State<Screen> {
       _lastPosition = position;
       _pindahposisi(position);
     }
-    double totalDistance = 0.0;
+    double totalDistance = 0;
     for (int i = 0; i < _myRoutes.length - 1; i++) {
       totalDistance += _coordinateDistance(
         _myRoutes[i].latitude,
@@ -103,11 +103,11 @@ class _ScreenPageState extends State<Screen> {
       );
       setState(() {
         _placeDistance = totalDistance;
-        print('DISTANCE: $_placeDistance km');
+        print('DISTANCE: $_placeDistance m');
       });
     }
-    distance = _placeDistance / .0005;
-    jarakLine = _placeDistance.toStringAsFixed(2);
+    distance = _placeDistance * 3;
+    jarakLine = _placeDistance.toStringAsFixed(0);
     langkah = distance.round();
   }
 
@@ -117,7 +117,7 @@ class _ScreenPageState extends State<Screen> {
     var a = 0.5 -
         c((lat2 - lat1) * p) / 2 +
         c(lat1 * p) * c(lat2 * p) * (1 - c((lon2 - lon1) * p)) / 2;
-    return 12742 * asin(sqrt(a));
+    return 12742 * asin(sqrt(a)) * 1000;
   }
 
   //fungsi untuk mengubah icon user
@@ -175,7 +175,7 @@ class _ScreenPageState extends State<Screen> {
             child: Align(
               alignment: Alignment.center,
               child: Text(
-                'Jarak yang ditempuh: $jarakLine km',
+                'Jarak yang ditempuh: $jarakLine m',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 22),
               ),
