@@ -15,8 +15,8 @@ Anggota :<br>
 Kelompok 2E<br>
 Fitur Menghitung Langkah Kaki berdasarkan GoogleMaps<br>
 Anggota :<br>
-1. Muh Nurkhaliz	(1101174472)<br>
-2. Threamadiazulsa	()<br>
+1. Muh Nurkhaliz	  (1101174472)<br>
+2. Trheamadiazulsa S()<br>
 3. Nandaliyan Rais	()<br>
 4. Andi ALif		()<br>
 5. Rifqy Nurrizqullah	()<br><br>
