@@ -4,6 +4,7 @@ import 'package:healthcare/Screens/Home/components/background.dart';
 import 'package:healthcare/Screens/WaterReminder/water_screen.dart';
 import 'package:healthcare/Screens/Weight/weight_screen.dart';
 import 'package:healthcare/components/button_fitur.dart';
+import 'package:healthcare/Screens/tracking/Tracking.dart';
 
 import 'package:healthcare/constant.dart';
 
@@ -83,6 +84,19 @@ class BodyHome extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) {
                         return WaterReminder();
+                      },
+                    ),
+                  );
+                },
+              ),
+              ButtonFitur(
+                text: "Tracking",
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return Tracking();
                       },
                     ),
                   );
