@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import './tracking_screen.dart';
+import 'package:healthcare/Screens/Maps/tracking_screen.dart';
 import 'package:flutter/services.dart';
 
-//File Start Pertama kali, Pemanggilan Screen.dart
+//File Start Pertama kali, Pemanggilan Tracking_screen.dart
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Health App",
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: ScreenPage(),
+      home: Screen(),
     );
   }
 }

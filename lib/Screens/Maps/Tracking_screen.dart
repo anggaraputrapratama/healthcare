@@ -8,15 +8,13 @@ import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'dart:math' show cos, sqrt, asin;
 
-
-class ScreenPage extends StatefulWidget {
+class Screen extends StatefulWidget {
   @override
   _ScreenPageState createState() => _ScreenPageState();
-
 }
 
 //Kelas untuk kontrol, marker, posisi, polylines ada disini
-class _ScreenPageState extends State<ScreenPage> {
+class _ScreenPageState extends State<Screen> {
   final data = FirebaseDatabase.instance;
   GoogleMapController googleMapController;
   Marker _marker;
@@ -34,7 +32,6 @@ class _ScreenPageState extends State<ScreenPage> {
   Map<PolylineId, Polyline> _polilynes = Map();
   List<LatLng> _myRoutes = List();
   Position _lastPosition;
-
 
   jarak() {
     double _placeDistance;
@@ -181,7 +178,7 @@ class _ScreenPageState extends State<ScreenPage> {
                 'Jarak yang ditempuh: $jarakLine km',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 22),
-                ),
+              ),
             ),
           ),
           Padding(
@@ -192,21 +189,19 @@ class _ScreenPageState extends State<ScreenPage> {
                 'Jumlah Langkah: $langkah',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 22),
-                ),
+              ),
             ),
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
             child: RaisedButton(
               color: Colors.green,
-              onPressed: ()=>{
-                jarak.set(jarakLine + " km"),
-                langkahkaki.set(langkah)
-            },
-            child: new Text("Simpan"),
-            textColor: Colors.white,),
-            
+              onPressed: () =>
+                  {jarak.set(jarakLine + " km"), langkahkaki.set(langkah)},
+              child: new Text("Simpan"),
+              textColor: Colors.white,
             ),
+          ),
         ],
       ),
     );
