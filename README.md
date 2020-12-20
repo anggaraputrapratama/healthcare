@@ -12,6 +12,16 @@ Anggota :<br>
 3. Amalia Nur Rahwati     (1101174065)<br>
 4. Rindiani Zainet        (1101174210)<br><br>
 
+Kelompok 2E<br>
+Fitur HeartBeat<br>
+Anggota :<br>
+1. Muh Nurkhaliz	(1101174472)<br>
+2. Threamadiazulsa	()<br>
+3. Nandaliyan Rais	()<br>
+4. Andi ALif		()<br>
+5. Rifqy Nurrizqullah	()<br><br>
+
+
 Kelompok 2G<br>
 Weight, Daily, and Food Recommendation<br>
 Anggota :<br>
