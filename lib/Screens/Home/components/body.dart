@@ -3,7 +3,7 @@ import 'package:healthcare/Screens/Heartbeat/heartbeat_screen.dart';
 import 'package:healthcare/Screens/Home/components/background.dart';
 import 'package:healthcare/Screens/WaterReminder/water_screen.dart';
 import 'package:healthcare/Screens/Weight/weight_screen.dart';
-import 'package:healthcare/Screens/Maps/Tracking.dart';
+import 'package:healthcare/Screens/Maps/tracking.dart';
 import 'package:healthcare/components/button_fitur.dart';
 
 import 'package:healthcare/constant.dart';
