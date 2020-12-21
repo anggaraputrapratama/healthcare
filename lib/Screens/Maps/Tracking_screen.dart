@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:math' as math;
-import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -32,22 +31,6 @@ class _ScreenPageState extends State<Screen> {
   Map<PolylineId, Polyline> _polilynes = Map();
   List<LatLng> _myRoutes = List();
   Position _lastPosition;
-
-  jarak() {
-    double _placeDistance;
-    double totalDistance = 0.0;
-    for (int i = 0; i < _myRoutes.length - 1; i++) {
-      totalDistance += _coordinateDistance(
-        _myRoutes[i].latitude,
-        _myRoutes[i].longitude,
-        _myRoutes[i + 1].latitude,
-        _myRoutes[i + 1].longitude,
-      );
-    }
-    _placeDistance = totalDistance;
-    print('DISTANCE: $_placeDistance km');
-  }
-
   //inisialisasi pemanggilan start track
   @override
   void initState() {
