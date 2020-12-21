@@ -5,6 +5,7 @@ import 'package:healthcare/Screens/WaterReminder/water_screen.dart';
 import 'package:healthcare/Screens/Weight/weight_screen.dart';
 import 'package:healthcare/Screens/Maps/tracking.dart';
 import 'package:healthcare/components/button_fitur.dart';
+import 'package:healthcare/Screens/UserProfile/input_profile.dart';
 
 import 'package:healthcare/constant.dart';
 
@@ -50,6 +51,19 @@ class BodyHome extends StatelessWidget {
                 ],
               ),
               SizedBox(height: size.height * 0.1),
+              ButtonFitur(
+                text: "User Profile",
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return InputProfile();
+                      },
+                    ),
+                  );
+                },
+              ),
               ButtonFitur(
                 text: "Heartbeat",
                 press: () {

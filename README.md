@@ -4,6 +4,15 @@ Tubes project mata kuliah Mobile App - Telkom University
 
 Aplikasi bernama Health Tracker
 
+Kelompok 2B
+Fitur UserProfile<br>
+Anggota :<br>
+1. Adhi Narpratama        (1101198505)<br>
+2. Dian Ayu Nurlitasari   (1101198510)<br>
+3. Wahyuni Rizky Perdani  (1101198511)<br>
+4. Syafiq Hilmi Abdullah  (1101198509)<br>
+5. Adhitya Insan Nurizky  (1101154092)<br><br>
+
 Kelompok 2C<br>
 Fitur HeartBeat<br>
 Anggota :<br>
@@ -17,9 +26,9 @@ Fitur Menghitung Langkah Kaki berdasarkan GoogleMaps<br>
 Anggota :<br>
 1. Muh Nurkhaliz	  (1101174472)<br>
 2. Trheamadiazulsa S(1101174226)<br>
-3. Nandaliyan Rais	()<br>
-4. Andi ALif		()<br>
-5. Rifqy Nurrizqullah	()<br><br>
+3. Muhammad Nandaliyan Rais Al Azizi	(1101174427)<br>
+4. Andi Alif Febritama		(1101174249)<br>
+5. Muhammad Rifqy Nur Rizqullah	(1101170488)<br><br>
 
 
 Kelompok 2G<br>
