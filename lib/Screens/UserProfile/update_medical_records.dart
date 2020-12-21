@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:healthcare/constant.dart';
 import 'package:healthcare/Screens/UserProfile/user_profile.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:intl/intl.dart';
 
 class UpdateMedical extends StatefulWidget {
   @override
@@ -16,6 +18,7 @@ class updatepenyakit {
   String hospital;
   String status;
   String symptoms;
+
   updatepenyakit(this.key, this.classification, this.date, this.doctor,
       this.hospital, this.status, this.symptoms);
   updatepenyakit.fromSnapshot(DataSnapshot snapshot)
@@ -87,6 +90,8 @@ class _UpdateMedicalState extends State<UpdateMedical> {
       itemRef.push().set(item.toJson());
     }
   }
+
+  TextEditingController tgl = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -160,7 +165,13 @@ class _UpdateMedicalState extends State<UpdateMedical> {
                               child: DropdownButton(
                                 hint: Text('Please choose..'),
                                 value: _classVal,
-                                onChanged: (val) => item.classification = val,
+                                onChanged: (val) {
+                                  item.classification = val;
+                                  _classVal = val;
+                                  setState(() {
+                                    _classVal;
+                                  });
+                                },
                                 items: _className.map((value) {
                                   return DropdownMenuItem(
                                     value: value,
@@ -232,16 +243,37 @@ class _UpdateMedicalState extends State<UpdateMedical> {
                               SizedBox(
                                 width: 180,
                                 height: 15,
-                                child: TextField(
-                                    onChanged: (val) => item.date = val,
-                                    textAlign: TextAlign.right,
-                                    decoration: InputDecoration(
-                                        labelStyle: TextStyle(
-                                      fontFamily: 'Lato',
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.w400,
-                                      fontStyle: FontStyle.normal,
-                                    ))),
+                                child: InkWell(
+                                  onTap: () {
+                                    DatePicker.showDatePicker(context,
+                                        showTitleActions: true,
+                                        minTime: DateTime(1900, 3, 5),
+                                        maxTime: DateTime(
+                                            DateTime.now().year,
+                                            DateTime.now().month,
+                                            DateTime.now().day),
+                                        onChanged: (date) {
+                                      print('change $date');
+                                    }, onConfirm: (newdate) {
+                                      tgl.text = DateFormat('yyyy-MM-dd')
+                                          .format(newdate);
+                                      item.date = tgl.text;
+                                      print('confirm $newdate');
+                                    },
+                                        currentTime: DateTime.now(),
+                                        locale: LocaleType.id);
+                                  },
+                                  child: TextFormField(
+                                      onChanged: (val) => item.date = val,
+                                      textAlign: TextAlign.right,
+                                      decoration: InputDecoration(
+                                          labelStyle: TextStyle(
+                                        fontFamily: 'Lato',
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.w400,
+                                        fontStyle: FontStyle.normal,
+                                      ))),
+                                ),
                               ),
                             ],
                           ),
@@ -323,7 +355,13 @@ class _UpdateMedicalState extends State<UpdateMedical> {
                                   child: DropdownButton(
                                     hint: Text('Please choose..'),
                                     value: _statusVal,
-                                    onChanged: (val) => item.status = val,
+                                    onChanged: (val) {
+                                      item.classification = val;
+                                      _statusVal = val;
+                                      setState(() {
+                                        _statusVal;
+                                      });
+                                    },
                                     items: _statusName.map((value) {
                                       return DropdownMenuItem(
                                         value: value,

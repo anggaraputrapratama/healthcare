@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:healthcare/constant.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:healthcare/Screens/UserProfile/user_profile.dart';
@@ -8,6 +9,7 @@ import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'package:path/path.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:intl/intl.dart';
 
 class AuthServices {
   static FirebaseAuth _auth = FirebaseAuth.instance;
@@ -59,13 +61,14 @@ class _UpdateProfileState extends State<UpdateProfile> {
     print("URL = $url");
   }
 
-  String name = "";
-  String dob = "";
-  String gender = "";
-  String region = "";
-  String bt = "";
+  String name;
+  String dob;
+  String gender;
+  String region;
+  String bt;
   int height;
   int weight;
+  TextEditingController tgl = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -220,20 +223,42 @@ class _UpdateProfileState extends State<UpdateProfile> {
                         SizedBox(
                           width: 200,
                           height: 15,
-                          child: TextField(
-                              onChanged: (val) {
-                                setState(() {
-                                  dob = val;
-                                });
+                          child: InkWell(
+                            onTap: () {
+                              DatePicker.showDatePicker(context,
+                                  showTitleActions: true,
+                                  minTime: DateTime(1900, 3, 5),
+                                  maxTime: DateTime(
+                                      DateTime.now().year,
+                                      DateTime.now().month,
+                                      DateTime.now().day), onChanged: (date) {
+                                print('change $date');
+                              }, onConfirm: (date) {
+                                tgl.text =
+                                    DateFormat('yyyy-MM-dd').format(date);
+                                dob = tgl.text;
+                                print('confirm $date');
                               },
-                              textAlign: TextAlign.right,
-                              decoration: InputDecoration(
-                                  labelStyle: TextStyle(
-                                fontFamily: 'Lato',
-                                fontSize: 15,
-                                fontWeight: FontWeight.w400,
-                                fontStyle: FontStyle.normal,
-                              ))),
+                                  currentTime: DateTime.now(),
+                                  locale: LocaleType.id);
+                            },
+                            child: TextFormField(
+                                controller: tgl,
+                                enabled: false,
+                                onChanged: (val) {
+                                  setState(() {
+                                    dob = val;
+                                  });
+                                },
+                                textAlign: TextAlign.right,
+                                decoration: InputDecoration(
+                                    labelStyle: TextStyle(
+                                  fontFamily: 'Lato',
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w400,
+                                  fontStyle: FontStyle.normal,
+                                ))),
+                          ),
                         )
                       ],
                     ),
@@ -389,13 +414,30 @@ class _UpdateProfileState extends State<UpdateProfile> {
               ),
               color: Color(0xFF3B72FF),
               onPressed: () async {
-                await uploadPic(context);
-                database.child("Data1/name").set(name);
-                database.child("Data1/dob").set(dob);
-                database.child("Data1/bt").set(bt);
-                database.child("Data1/height").set(height);
-                database.child("Data1/weight").set(weight);
-                database.child("Data1/url").set(_url);
+                if (_imageFile != null) {
+                  await uploadPic(context);
+                }
+
+                print('name = $name');
+                if (name != null) {
+                  database.child("Data1/name").set(name);
+                }
+                if (dob != null) {
+                  database.child("Data1/dob").set(dob);
+                }
+                if (bt != null) {
+                  database.child("Data1/bt").set(bt);
+                }
+                if (height != null) {
+                  database.child("Data1/height").set(height);
+                }
+                if (weight != null) {
+                  database.child("Data1/weight").set(weight);
+                }
+                if (_url != null) {
+                  database.child("Data1/url").set(_url);
+                }
+
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
