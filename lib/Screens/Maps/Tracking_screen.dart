@@ -180,7 +180,7 @@ class _ScreenPageState extends State<Screen> {
             child: RaisedButton(
               color: Colors.green,
               onPressed: () =>
-                  {jarak.set(jarakLine + " m"), langkahkaki.set(langkah)},
+                  {jarak.set(jarakLine + " km"), langkahkaki.set(langkah)},
               child: new Text("Simpan"),
               textColor: Colors.white,
             ),
