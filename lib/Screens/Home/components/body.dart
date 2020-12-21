@@ -57,7 +57,7 @@ class BodyHome extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) {
-                        return Heartbeat();
+                        return HeartBeat();
                       },
                     ),
                   );
