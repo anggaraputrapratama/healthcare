@@ -30,6 +30,14 @@ Anggota :<br>
 4. Andi Alif Febritama		(1101174249)<br>
 5. Muhammad Rifqy Nur Rizqullah	(1101170488)<br><br>
 
+Kelompok 2E<br>
+Fitur Menghitung Langkah Kaki berdasarkan GoogleMaps<br>
+Anggota :<br>
+1. Raka Cendekia Vandara (1101170419)<br>
+2. I Ketut Hary Dwipayana (1101174290)<br>
+3. Nizar Rizky Awany (1101174449)<br>
+4. Kiki Widianto (1101174394)<br>
+5. Aprilla Firdausya Nugraha (1101173283)<br><br>
 
 Kelompok 2G<br>
 Weight, Daily, and Food Recommendation<br>
