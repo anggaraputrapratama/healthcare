@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:healthcare/components/rounded_button.dart';
-import 'package:provider/single_child_widget.dart';
 
 class HeartBeat extends StatelessWidget {
   final databaseReference = FirebaseDatabase.instance.reference();
