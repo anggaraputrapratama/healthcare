@@ -1,0 +1,279 @@
+{
+  "project_info": {
+    "project_number": "575728768630",
+    "firebase_url": "https://healthtracker-5afb5.firebaseio.com",
+    "project_id": "healthtracker-5afb5",
+    "storage_bucket": "healthtracker-5afb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575728768630:android:2593567d2f6ae183e1f157",
+        "android_client_info": {
+          "package_name": "com.anggaraputrapratama.healthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO8fE-JpRXoP4eGRg7_PBY0QTYzm40CJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575728768630-32jlk5u2noemvhofmsvatasl8man0dff.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anggaraputrapratama.HealthTracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575728768630:android:65eab08d261bed0fe1f157",
+        "android_client_info": {
+          "package_name": "com.example.health_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO8fE-JpRXoP4eGRg7_PBY0QTYzm40CJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575728768630-32jlk5u2noemvhofmsvatasl8man0dff.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anggaraputrapratama.HealthTracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575728768630:android:6252a58d0e073857e1f157",
+        "android_client_info": {
+          "package_name": "com.example.tubes_mobapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575728768630-r7b6ma53ak2ihqt1ctjlrtl2sanrpen9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tubes_mobapp",
+            "certificate_hash": "b41fefb511b636bdda1c5a0d044105d8b5e14f2d"
+          }
+        },
+        {
+          "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO8fE-JpRXoP4eGRg7_PBY0QTYzm40CJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575728768630-32jlk5u2noemvhofmsvatasl8man0dff.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anggaraputrapratama.HealthTracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575728768630:android:f5c2a879116ebe27e1f157",
+        "android_client_info": {
+          "package_name": "com.example.tubesmobapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO8fE-JpRXoP4eGRg7_PBY0QTYzm40CJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575728768630-32jlk5u2noemvhofmsvatasl8man0dff.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anggaraputrapratama.HealthTracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575728768630:android:51c89d9108f58270e1f157",
+        "android_client_info": {
+          "package_name": "com.example.update_food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO8fE-JpRXoP4eGRg7_PBY0QTYzm40CJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575728768630-32jlk5u2noemvhofmsvatasl8man0dff.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anggaraputrapratama.HealthTracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575728768630:android:17cf0b95d2bfbfc9e1f157",
+        "android_client_info": {
+          "package_name": "com.example.water_reminder_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO8fE-JpRXoP4eGRg7_PBY0QTYzm40CJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575728768630-32jlk5u2noemvhofmsvatasl8man0dff.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anggaraputrapratama.HealthTracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575728768630:android:54cd42ff7496904be1f157",
+        "android_client_info": {
+          "package_name": "okelah.bos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575728768630-rih121v71bd3e7v5qt58otmq0lfsedqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "okelah.bos",
+            "certificate_hash": "b41fefb511b636bdda1c5a0d044105d8b5e14f2d"
+          }
+        },
+        {
+          "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO8fE-JpRXoP4eGRg7_PBY0QTYzm40CJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575728768630-n5qbsfj1us4d1f85gtrpb4r4o6bj00tq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575728768630-32jlk5u2noemvhofmsvatasl8man0dff.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anggaraputrapratama.HealthTracker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
